@@ -23,4 +23,10 @@ Complexity of Development:
 - Estim L issue estimation - 11 to 20 days
 - Estim XL issue estimation - 21 to 30 days
 - Estim XXL issue estimation - 31 to More
----
+
+# Techno
+Here are the technos that we use, to realize the project
+
+Back: 
+Front: 
+Infra: 
