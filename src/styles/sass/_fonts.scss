@@ -1,1 +1,52 @@
 // Fonts
+
+// Khula
+@font-face {
+    font-family: 'Khula';
+    src: url('/fonts/Khula-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Khula';
+    src: url('/fonts/Khula-ExtraBold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Khula';
+    src: url('/fonts/Khula-Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Khula';
+    src: url('/fonts/Khula-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Khula';
+    src: url('/fonts/Khula-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+// DM
+@font-face {
+    font-family: 'DM';
+    src: url('/fonts/DMSerifDisplay-Italic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM';
+    src: url('/fonts/DMSerifDisplay-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
