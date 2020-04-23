@@ -28,5 +28,5 @@ Complexity of Development:
 Here are the technos that we use, to realize the project
 
 Back: 
-Front: 
+Front: React JS 
 Infra: 
