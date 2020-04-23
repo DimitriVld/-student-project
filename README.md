@@ -1,6 +1,6 @@
 # Student project - Hetic
 
-## process 
+# process 
 
 Projet -> A project corresponds to a MVP of a version. Every project is like a spint with Backlog, Waiting, In progress, Review, to test, validated. 
 
@@ -23,3 +23,4 @@ Complexity of Development:
 - Estim L issue estimation - 11 to 20 days
 - Estim XL issue estimation - 21 to 30 days
 - Estim XXL issue estimation - 31 to More
+---
