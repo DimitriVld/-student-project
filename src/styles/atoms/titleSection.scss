@@ -1,10 +1,10 @@
-.titles-atom{
+.title-section-atom{
 
-    .titles-content{
+    .content{
         @extend %title-2;
     }
 
-    .titles-sub{
+    .sub{
         font-family: 'DM';
         font-style: italic;
         color: rgba($white-primary, .5);

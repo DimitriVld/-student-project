@@ -3,7 +3,7 @@ import React from 'react';
 //Atoms
 import TitlePage from '../atoms/TitlePage';
 import Icon from '../atoms/icons/Index';
-import Titles from '../atoms/Titles';
+import TitleSection from '../atoms/TitleSection';
 import ListItem from '../atoms/ListItem';
 
 //Datas
@@ -47,7 +47,7 @@ const Home = () => {
                         # Titles component 
                         # Contain Titles | Italic text
                     */}
-                    <Titles 
+                    <TitleSection 
                         title = {'Nos competences'}
                         subtitle = {'qui nous tiennent à coeur'}
                     />
