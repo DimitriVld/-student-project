@@ -1,9 +1,12 @@
 .intro-title{
     @extend %title-1; 
+    
     color: $white-primary;
 
     .intro-title-outline{
         @extend .intro-title;
+
+        color: transparent;
         -webkit-text-stroke: 1px $white-primary;
     }
 }
