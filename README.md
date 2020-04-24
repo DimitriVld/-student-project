@@ -24,9 +24,23 @@ Complexity of Development:
 - Estim XL issue estimation - 21 to 30 days
 - Estim XXL issue estimation - 31 to More
 
+# DEV
+
+### Add style for storybooks
+Special styles for StoryBooks : ```src/styles/app-story.scss```
+
+Styles are watched from app directories : ```src/styles/app.scss```
+
+### Add new story in storybooks
+Add like that ```src/stories/[component_name].stories.js```
+
+Then ```main.js``` in ```.storybook``` watch the folder
+
 # Techno
 Here are the technos that we use, to realize the project
 
 Back: 
 Front: React JS 
 Infra: 
+
+
