@@ -2,7 +2,6 @@
 %title-1{
     display: block;
 
-    color: $black-primary;
     font-size: 72px;
     text-transform: uppercase;
     font-family: 'Khula';
@@ -20,8 +19,15 @@
 // Second title
 %title-2{
     @extend %title-1;
-    font-size: 90px;
-    font-weight: bold;
+    font-size: 40px;
+
+    @include tabletLandscape{
+        font-size: 32px;
+    }
+
+    @include mobilePortrait{
+        font-size: 28px;
+    }
 }
 
 // Third title

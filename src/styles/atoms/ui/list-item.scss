@@ -1,0 +1,44 @@
+.list-item-atom{
+
+    position: relative;
+
+    .item-name{
+        font-size: 24px;
+
+        &:after{
+            content: "";
+            
+            position: relative;
+            
+            display: block;
+            margin: 12px 0 18px 0;
+
+            background: $white-primary;
+            width: 32px; 
+            height: 4px;
+        }
+    }
+
+    .item-content{
+        font-weight: 300;
+        line-height: 150%;
+    }
+
+    .item-id{
+        position: absolute;
+
+        right: 0;
+        top: 0;
+
+        font-size: 24px;
+        font-weight: 700;
+
+        color: rgba($white-primary, .5);
+    }
+
+
+    &.small-item{
+        width: 27%;
+    }
+
+}

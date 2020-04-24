@@ -32,6 +32,9 @@
 */
 @import "./atoms/ui/button.scss";
 @import "./atoms/ui/intro.scss";
+@import "./atoms/ui/titles.scss";
+@import "./atoms/ui/list-item.scss";
+
 @import "./atoms/icons/burgerIcon.scss";
 
 
@@ -57,7 +60,6 @@
                __/ |
               |___/
 */
-@import "./layouts/base.scss";
 @import "./layouts/DefaultLayout.scss";
 
 
