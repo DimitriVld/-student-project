@@ -28,8 +28,10 @@ Complexity of Development:
 
 ### Add style for storybooks
 Special styles for StoryBooks : ```src/styles/app-story.scss```
+
 Styles are watched from app directories : ```src/styles/app.scss```
 
 ### Add new story in storybooks
 Add like that ```src/stories/[component_name].stories.js```
+
 Then ```main.js``` in ```.storybook``` watch the folder
