@@ -11,6 +11,10 @@
     margin: auto;
     width: calc(100% - 150px);
     max-width: 1440px;
+
+    @include tabletLandscape{
+        width: calc(100% - 30px);
+    }
 }
 
 // D
