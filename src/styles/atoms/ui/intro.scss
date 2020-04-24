@@ -1,12 +1,32 @@
-.intro-title{
-    @extend %title-1; 
+.intro-atom{
+
+    width: 60%;
+
+    @include tabletPortrait{
+        width: 100%;
+    }
+
+    .intro-title{
+        @extend %title-1; 
     
-    color: $white-primary;
+        color: $white-primary;
+    
+        .intro-title-outline{
+            @extend .intro-title;
+    
+            color: transparent;
+            -webkit-text-stroke: 1px $white-primary;
+        }
+    }
 
-    .intro-title-outline{
-        @extend .intro-title;
+    .intro-text{
+        margin-top: 16px;
 
-        color: transparent;
-        -webkit-text-stroke: 1px $white-primary;
+        font-size: 24px;
+        line-height: 150%;
+
+        @include tabletPortrait{
+            font-size: 16px;
+        }
     }
 }
