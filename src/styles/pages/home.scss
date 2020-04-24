@@ -3,5 +3,21 @@
         height: 100vh;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+
+
+        @include tabletLandscape{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .smile-icon{
+            align-self: baseline;
+
+            @include tabletLandscape{
+                align-self: flex-end;
+                width: 200px;
+            }
+        }
     }
 }
