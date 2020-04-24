@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Intro = (props) => {
+const TitlePage = (props) => {
     return (
         <div className="intro-atom">
             <h1 className="intro-title">
@@ -16,4 +16,4 @@ const Intro = (props) => {
 
 }
 
-export default Intro;
+export default TitlePage;

@@ -1,13 +1,13 @@
 import React from 'react';
 
 //Atoms
-import Intro from '../atoms/ui/Intro';
+import TitlePage from '../atoms/ui/TitlePage';
+import Icon from '../atoms/icons/Index';
 import Titles from '../atoms/ui/Titles';
 import ListItem from '../atoms/ui/ListItem';
 
 //Datas
 import {competences} from '../../constants/competences';
-
 
 const Home = () => {
     return (
@@ -18,21 +18,19 @@ const Home = () => {
             |   Banner 
             |-------------
             */}
-            <section className="banner">
-                <div className="container-dft">
+            <section className="banner container-dft">
+                {/*
+                    # Title Page component 
+                    # Contain Title
+                    # contentText (facultative)
+                */}
+                <TitlePage 
+                    titleFirst={'We create <br/> & build'} 
+                    titleSecond={'Digital solution'} 
+                    contentText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+                />
 
-                    {/*
-                        # Intro component 
-                        # Contain Title
-                        # contentText (facultative)
-                    */}
-                    <Intro 
-                        titleFirst={'We create <br/> & build'} 
-                        titleSecond={'Digital solution'} 
-                        contentText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-                    />
-
-                </div>
+                <Icon name="Smile" width={300}/>
             </section>
 
 
