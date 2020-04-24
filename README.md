@@ -36,6 +36,10 @@ Add like that ```src/stories/[component_name].stories.js```
 
 Then ```main.js``` in ```.storybook``` watch the folder
 
+### Run
+Run ```yarn storybook``` or ```npm run storybook```
+
+
 # Techno
 Here are the technos that we use, to realize the project
 
