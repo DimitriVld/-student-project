@@ -1,6 +1,6 @@
 # Student project - Hetic
 
-## process 
+# process 
 
 Projet -> A project corresponds to a MVP of a version. Every project is like a spint with Backlog, Waiting, In progress, Review, to test, validated. 
 
@@ -35,3 +35,14 @@ Styles are watched from app directories : ```src/styles/app.scss```
 Add like that ```src/stories/[component_name].stories.js```
 
 Then ```main.js``` in ```.storybook``` watch the folder
+
+### Run
+Run ```yarn storybook``` or ```npm run storybook```
+
+
+# Techno
+Here are the technos that we use, to realize the project
+
+Back: 
+Front: React JS 
+Infra: 
