@@ -1,10 +1,10 @@
 import React from 'react';
 
 //Atoms
-import TitlePage from '../atoms/ui/TitlePage';
+import TitlePage from '../atoms/TitlePage';
 import Icon from '../atoms/icons/Index';
-import Titles from '../atoms/ui/Titles';
-import ListItem from '../atoms/ui/ListItem';
+import Titles from '../atoms/Titles';
+import ListItem from '../atoms/ListItem';
 
 //Datas
 import {competences} from '../../constants/competences';

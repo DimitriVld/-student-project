@@ -2,13 +2,13 @@ import React from 'react';
 
 const TitlePage = (props) => {
     return (
-        <div className="intro-atom">
-            <h1 className="intro-title">
+        <div className="title-page-atom">
+            <h1 className="title">
                 <span dangerouslySetInnerHTML={{__html: props.titleFirst}}></span>
-                <span className="intro-title-outline">{props.titleSecond}</span>
+                <span className="title-outline">{props.titleSecond}</span>
             </h1>
             { props.contentText ? 
-                <div className="intro-text">{props.contentText}</div>
+                <div className="text">{props.contentText}</div>
                 : ""
             }
         </div>
