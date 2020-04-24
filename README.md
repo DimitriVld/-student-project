@@ -24,7 +24,7 @@ Complexity of Development:
 - Estim XL issue estimation - 21 to 30 days
 - Estim XXL issue estimation - 31 to More
 
-#DEV
+# DEV
 
 ### Add style for storybooks
 Special styles for StoryBooks : ```src/styles/app-story.scss```
