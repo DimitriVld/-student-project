@@ -1,0 +1,10 @@
+.default-layout{
+    background-color: $black-primary;
+    color: $white-primary;
+
+    main{
+        max-width: 1440px;
+        width: calc(100% - 64px);
+        margin: auto;
+    }
+}

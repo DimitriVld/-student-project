@@ -46,5 +46,3 @@ Here are the technos that we use, to realize the project
 Back: 
 Front: React JS 
 Infra: 
-
-
