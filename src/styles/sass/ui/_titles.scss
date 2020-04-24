@@ -8,10 +8,10 @@
     font-family: 'Khula';
     font-weight: 700;
 
-    @include tabletPortrait{
+    @include tabletLandscape{
         font-size: 40px;
     }
-    
+
     @include mobilePortrait{
         font-size: 32px;
     }
