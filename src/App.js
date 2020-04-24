@@ -1,5 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AppContext from './context/AppContext';
+import Default from "./views/layouts/DefaultLayout";
 import HomePage from "./views/pages/Home";
 
 class App extends React.Component {
@@ -18,7 +20,9 @@ class App extends React.Component {
   render() {
     return (
       <AppContext.Provider value={this.state}>
-        <HomePage />
+        <Router>
+          <Route exact path="/" component={() => <Default page={<HomePage />} />} />
+        </Router>
       </AppContext.Provider>
     );
   }

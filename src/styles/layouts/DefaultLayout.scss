@@ -1,0 +1,7 @@
+.default-layout{
+    max-width: 1440px;
+    width: calc(100% - 64px);
+    margin: auto;
+    background-color: $black-primary;
+    color: $white-primary;
+}
