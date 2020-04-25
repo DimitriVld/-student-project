@@ -1,0 +1,20 @@
+.expert-item-atom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 220px;
+    padding: 55px;
+    background-color: $black-darkeness-primary;
+
+    .item-img{
+        width: 70px;
+        height: auto;
+    }
+
+    .item-name{
+        margin-top: 30px;
+        font-weight: bolder;
+        white-space:nowrap;
+    }
+}
