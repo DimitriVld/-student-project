@@ -136,6 +136,7 @@ const Home = () => {
                         return(
                             <ProjectItem 
                                 key = {item.id}
+                                id = {item.id}
                                 img = {item.img}
                                 title = {item.title}
                                 type = {item.type}

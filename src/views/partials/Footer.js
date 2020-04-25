@@ -13,7 +13,7 @@ const Footer = (props) => {
                     # Contain Titles | Italic text
                 */}
                 <TitleSection 
-                    title = {'Un projet ? Parlons en ensemble'}
+                    title = {'Un projet ? <br/> Parlons en ensemble'}
                     subtitle = {'Pour faire de la purée Mousline'}
                 />
 
