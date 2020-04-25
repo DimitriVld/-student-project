@@ -1,0 +1,78 @@
+.contact-page{
+
+    .title-page-atom{
+
+        .text{
+            margin-top: 0;
+            font-family: DM Serif Display;
+            font-style: italic;
+            line-height: 100%;
+            opacity: 0.5;
+        }
+    }
+
+    .img{
+        position: absolute;
+        top: -90px;
+        right: 0;
+        width: 485px;
+        height: 580px;
+        background-color: $black-darkeness-primary;
+    }
+
+    form{
+        width: 60%;
+    }
+
+    .map{
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 100vw;
+        height: 459px;
+        background-color: $black-darkeness-primary;
+    }
+
+    .infos{
+        h4{
+            font-weight: bold;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        
+        .sub-title{
+            font-family: DM Serif Display;
+            font-size: 24px;
+            font-style: italic;
+            opacity: 0.5;
+        }
+
+        .ville{
+            margin-top: 56px;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .adresse{
+            margin-top: 16px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .tel{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .email{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+}
