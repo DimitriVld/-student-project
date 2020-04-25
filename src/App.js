@@ -29,7 +29,7 @@ class App extends React.Component {
         <Router>
           <Route exact path="/" component={() => <Default page={<Home />} />} />
           <Route exact path="/about-us" component={() => <Default page={<AboutUs />} />} />
-          <Route exact path="/contact" component={() => <Default page={<Contact />} />} />
+          <Route exact path="/contact" component={() => <Default page={<Contact />} name={'contact'} />} />
           <Route exact path="/expertises" component={() => <Default page={<Expertises />} />} />
           <Route exact path="/projects" component={() => <Default page={<Projects />} />} />
           <Route exact path="/services" component={() => <Default page={<Services />} />} />

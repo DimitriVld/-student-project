@@ -1,3 +1,87 @@
 .footer-partial{
-    display: initial;
+    position: relative;
+
+    .footer-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 34px;
+        padding-left: 34px;
+
+        &.contact{
+            display: none;
+        }
+
+        .title-section-atom .content{
+            text-decoration: underline;
+        }
+
+    }
+
+    .footer-bottom{
+        display: flex;
+        padding: 64px;
+        background-color: $black-darkeness-primary;
+
+        .footer-nav{
+            flex: 1;
+            display: flex;
+            border-right: 1px solid $white-primary;
+            
+            a{
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .nav{
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+
+                a{
+                    margin-top: 36px;
+
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        .footer-infos{
+            flex: 2;
+            padding-left: 80px;
+
+            h4{
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .email{
+                margin-top: 14px;
+                font-size: 24px;
+                opacity: .5;
+            }
+
+            .adresse{
+                margin-top: 5px;
+                font-size: 24px;
+                opacity: .5;
+            }
+
+            .socials{
+                display: flex;
+                margin-top: 60px;
+
+                img{
+                    width: 24px;
+                    height: 24px;
+
+                    &:first-child{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
