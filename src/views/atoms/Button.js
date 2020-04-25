@@ -2,10 +2,6 @@ import React, {Component} from "react";
 
 class Button extends Component{
 
-    state = {
-        disable: false,
-    }
-
     render(){
         
         return(

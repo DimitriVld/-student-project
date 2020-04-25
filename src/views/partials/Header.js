@@ -1,9 +1,10 @@
 import React from 'react';
+import Navigation from "../atoms/Navigation";
 
 const Header = () => {
     return(
         <header className={'header-partial'} >
-            <h1> This is a header partial </h1>
+            <Navigation />
         </header>
     )
 }
