@@ -6,10 +6,12 @@ import Icon from '../atoms/icons/Index';
 import TitleSection from '../atoms/TitleSection';
 import ListItem from '../atoms/ListItem';
 import ExpertItem from '../atoms/ExpertItem';
+import ProjectItem from '../atoms/ProjectItem';
 
 //Datas
 import {competences} from '../../constants/competences';
 import {staticExpertises} from '../../constants/staticExpertises';
+import {staticProjects} from '../../constants/staticProjects';
 
 const Home = () => {
     return (
@@ -119,7 +121,29 @@ const Home = () => {
             |   Derniers projets 
             |----------------
             */}
-            <section className="last-projects container-dft"></section>
+            <section className="projects container-dft section">
+                {/*
+                    # Titles component 
+                    # Contain Titles | Italic text
+                */}
+                <TitleSection 
+                    title = {"Nos champs d'actions"}
+                    subtitle = {'Parce qu’en plus d’être gentils, nous sommes pluridisciplinaires'}
+                />
+
+                <div className="lasts-projects">
+                    {staticProjects.filter(project => project.id <= 4 ).map( item => {
+                        return(
+                            <ProjectItem 
+                                key = {item.id}
+                                img = {item.img}
+                                title = {item.title}
+                                type = {item.type}
+                            />
+                        )
+                    })}
+                </div>
+            </section>
         </div>
     )
 }
