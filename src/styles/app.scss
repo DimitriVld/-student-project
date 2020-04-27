@@ -37,9 +37,16 @@
 @import "./atoms/expert-item.scss";
 @import "./atoms/project-item.scss";
 @import "./atoms/navigation.scss";
+@import "./atoms/label.scss";
+@import "./atoms/input-text.scss";
+@import "./atoms/input-checkbox.scss";
 
 // ICONS
 @import "./atoms/icons/burgerIcon.scss";
+
+// Molecules
+@import "./molecules/input-text-group.scss";
+@import "./molecules/input-checkbox-group.scss";
 
 
 /*

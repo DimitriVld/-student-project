@@ -35,5 +35,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^25.4.0",
+    "ts-jest": "^25.4.0"
+  },
+  "jest": {
+    "preset": "ts-jest"
   }
 }
