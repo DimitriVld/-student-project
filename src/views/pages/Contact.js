@@ -3,6 +3,7 @@ import React from 'react';
 //Atoms
 import TitlePage from '../atoms/TitlePage';
 import Form from '../molecules/FormContact';
+import Map from '../atoms/Map';
 
 class ContactPage extends React.Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class ContactPage extends React.Component {
                 
                 <Form />
 
-                <div className="map"></div>
+                <Map />
 
                 <div className="infos section">
                     <h4>Office</h4>
