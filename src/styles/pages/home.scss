@@ -59,6 +59,32 @@
             flex-wrap: wrap;
             margin-right: -95px;
         }
+
+        @include tabletLandscape{
+            flex-direction: column;
+
+            .action-content{
+
+                p{
+                    padding-right: 0;
+                }
+            }
+
+            .action-icon{
+                width: 100%;
+                margin-top: 46px;
+
+                .expert-item-atom{
+                    flex: 0 50%;
+                    max-width: initial;
+                    padding: 27px 5px;
+
+                    .item-img{
+                        width: 3rem;
+                    }
+                }
+            }
+        }
     }
 
     .projects{
