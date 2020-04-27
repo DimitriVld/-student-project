@@ -15,7 +15,7 @@ const AddIcon = ({
             viewBox={viewBox}
             fill={fill}
             xmlns="http://www.w3.org/2000/svg"
-            className={`${className || "burger"}-icon`}
+            className={`${className || "add"}-icon`}
         >
             <circle cx="74.9358" cy="74.6224" r="73.6224" stroke="white" strokeWidth="2"/>
             <line x1="46" y1="75.1865" x2="104" y2="75.1865" stroke="white" strokeWidth="3"/>
