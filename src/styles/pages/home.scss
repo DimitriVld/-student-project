@@ -34,6 +34,26 @@
                 margin-top: 80px;
             }
         }
+
+        .slick-slider{
+            display: none;
+            margin-top: 60px;
+            width: 100%;
+
+            .list-item-atom{
+                margin-right: 24px;
+            }
+        }
+
+        @include mobileLandscape{
+            .competences-container{
+                display: none;
+            }
+
+            .slick-slider{
+                display: block;
+            }
+        }
     }
 
     .action{

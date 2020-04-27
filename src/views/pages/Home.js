@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from "react-slick";
 
 //Atoms
 import TitlePage from '../atoms/TitlePage';
@@ -14,6 +15,13 @@ import {staticExpertises} from '../../constants/staticExpertises';
 import {staticProjects} from '../../constants/staticProjects';
 
 const Home = () => {
+    const settingsSlider = {
+        infinite: false,
+        dots:false,
+        arrows: false,
+        slidesToShow: 1.2,
+        slidesToScroll: 1
+      };
     return (
         <div className={'home-page'}>
 
@@ -73,6 +81,23 @@ const Home = () => {
                             )
                         })}
                     </div>
+
+                    {/* 
+                    |   Competences list for mobile
+                    |----------------------
+                    */}
+                    <Slider {...settingsSlider}>
+                        {competences.map( item => {
+                            return(
+                                <ListItem 
+                                    key = {item.id}
+                                    id = {item.id + 1}
+                                    name = {item.name}
+                                    content = {item.content}
+                                />
+                            )
+                        })}
+                    </Slider>
                 </div>
             </section>
 
@@ -127,8 +152,8 @@ const Home = () => {
                     # Contain Titles | Italic text
                 */}
                 <TitleSection 
-                    title = {"Nos champs d'actions"}
-                    subtitle = {'Parce qu’en plus d’être gentils, nous sommes pluridisciplinaires'}
+                    title = {"Nos derniers projets"}
+                    subtitle = {'Nos petites fiertés'}
                 />
 
                 <div className="lasts-projects">
