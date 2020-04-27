@@ -44,14 +44,16 @@
 // D
 %default-ipt{
     display: block;
-    margin-top: 12px;
+    margin-top: 20px;
     width: 100%;
     border: none;
     border-bottom: solid 1px white;
     background-color: transparent;
     font-size: 28px;
     line-height: 130%;
+    color: $white-primary;
     opacity: .5;
+    outline: none;
 }
 
 // E
@@ -62,7 +64,7 @@
 // F
 %fieldset{
    display: block;
-   margin-top: 30px;
+   margin-top: 60px;
 }
 
 // G

@@ -2,9 +2,7 @@ import React from 'react';
 
 //Atoms
 import TitlePage from '../atoms/TitlePage';
-import InputCheckboxGroup from '../molecules/InputCheckboxGroup';
-import InputTextGroup from '../molecules/InputTextGroup';
-import Button from '../atoms/Button';
+import Form from '../molecules/FormContact';
 
 class ContactPage extends React.Component {
     constructor(props) {
@@ -23,12 +21,11 @@ class ContactPage extends React.Component {
                     contentText={'Remplir le formulaire ou nous envoyer un mail.'}
                 />
                 <div className='img'></div>
-                <form>
-                    <InputCheckboxGroup text='Un projet' name='projet' />
-                    <InputTextGroup text='Quel est votre nom ?' placeholder='Jean Christophe' name='fullname' />
-                    <Button text='Envoyer'/>
-                </form>
+                
+                <Form />
+
                 <div className="map"></div>
+
                 <div className="infos section">
                     <h4>Office</h4>
                     <p className='sub-title'>Notre ter-ter</p>

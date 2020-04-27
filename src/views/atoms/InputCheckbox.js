@@ -5,7 +5,10 @@ const InputCheckbox = (props) => {
         <input
             className={'input-checkbox-atom'}
             type={'checkbox'}
+            id={props.id}
             name={props.name}
+            value={props.value}
+            onClick={props.onClick}
         />
     );
 }
