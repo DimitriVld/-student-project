@@ -8,18 +8,20 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "3.4.0",
     "react-slick": "^0.25.2",
     "react-test-renderer": "^16.13.1",
+    "styled-components": "^5.0.1",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:nowatch": "CI=true react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -s ./public -p 9001"
   },
@@ -41,9 +43,22 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "babel-core": "^7.0.0-0",
-    "ts-jest": "^25.4.0"
+    "ts-jest": "^25.4.0",
+    "jest-cucumber": "^2.0.11",
+    "jest-styled-components": "^7.0.2",
+    "jest-watch-typeahead": "^0.5.0"
   },
   "jest": {
-    "preset": "ts-jest"
+    "collectCoverageFrom": [
+      "src/views/atoms/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   }
 }
