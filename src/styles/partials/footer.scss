@@ -16,6 +16,12 @@
             text-decoration: underline;
         }
 
+        @include mobileLandscape{
+            .add-icon{
+                width: 5rem;
+            }
+        }
+
     }
 
     .footer-bottom{
@@ -26,7 +32,7 @@
         .footer-nav{
             flex: 1;
             display: flex;
-            border-right: 1px solid $white-primary;
+            border-right: .5px solid $white-primary;
             
             a{
                 font-weight: bold;
@@ -81,6 +87,21 @@
                         margin-right: 10px;
                     }
                 }
+            }
+        }
+
+        @include mobileLandscape{
+            flex-direction: column;
+
+            .footer-nav{
+                padding-bottom: 36px;
+                border-right: none;
+                border-bottom: .5px solid $white-primary;
+            }
+
+            .footer-infos{
+                padding-top: 36px;
+                padding-left: 0;
             }
         }
     }

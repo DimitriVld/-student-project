@@ -34,6 +34,26 @@
                 margin-top: 80px;
             }
         }
+
+        .slick-slider{
+            display: none;
+            margin-top: 60px;
+            width: 100%;
+
+            .list-item-atom{
+                margin-right: 24px;
+            }
+        }
+
+        @include mobileLandscape{
+            .competences-container{
+                display: none;
+            }
+
+            .slick-slider{
+                display: block;
+            }
+        }
     }
 
     .action{
@@ -58,6 +78,32 @@
             display: flex;
             flex-wrap: wrap;
             margin-right: -95px;
+        }
+
+        @include tabletLandscape{
+            flex-direction: column;
+
+            .action-content{
+
+                p{
+                    padding-right: 0;
+                }
+            }
+
+            .action-icon{
+                width: 100%;
+                margin-top: 46px;
+
+                .expert-item-atom{
+                    flex: 0 50%;
+                    max-width: initial;
+                    padding: 27px 5px;
+
+                    .item-img{
+                        width: 3rem;
+                    }
+                }
+            }
         }
     }
 

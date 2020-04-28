@@ -1,15 +1,11 @@
-import React, {Component} from "react";
+import React from "react";
 
-class Button extends Component{
-
-    render(){
-        
-        return(
-            <button className={"button-atom"} disabled={this.state.disable}> 
-                This a button atom 
-            </button>
-        )
-    }
+const Button = (props) => { 
+    return(
+        <button data-testid={props.testid} id={props.id} className={`button-atom ${props.disabled ? 'disabled' : ''}`} disabled={props.disabled} onClick={props.onClick}> 
+            {props.text}
+        </button>
+    )
 }
 
 export default Button;

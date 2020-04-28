@@ -2,6 +2,8 @@ import React from 'react';
 
 //Atoms
 import TitlePage from '../atoms/TitlePage';
+import Form from '../molecules/FormContact';
+import Map from '../atoms/Map';
 
 class ContactPage extends React.Component {
     constructor(props) {
@@ -20,8 +22,11 @@ class ContactPage extends React.Component {
                     contentText={'Remplir le formulaire ou nous envoyer un mail.'}
                 />
                 <div className='img'></div>
-                <form>ok</form>
-                <div className="map"></div>
+                
+                <Form />
+
+                <Map />
+
                 <div className="infos section">
                     <h4>Office</h4>
                     <p className='sub-title'>Notre ter-ter</p>
