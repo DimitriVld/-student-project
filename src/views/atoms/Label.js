@@ -2,7 +2,7 @@ import React from "react";
 
 const Label = (props) => { 
     return(
-        <label className={`label-atom`} htmlFor={props.for}> 
+        <label data-testid={props.testid} className={`label-atom`} htmlFor={props.for}> 
             {props.text}
         </label>
     )

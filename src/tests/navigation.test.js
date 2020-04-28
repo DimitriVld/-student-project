@@ -17,7 +17,7 @@ class Navigation extends React.Component{
 
     render(){
         return (
-            <div data-testid={this.props.testid} className={'navigation-atom'}>
+            <div className={'navigation-atom'}>
     
                 {/* Menu */}
                 <Link className='logo' to='/'>Logo</Link>

@@ -10,7 +10,7 @@ class ContactPage extends React.Component {
 
     render(){
         return (
-            <img data-testid={this.props.testid} className='map-atom' src='./img/map.png' alt='img map' />
+            <img className='map-atom' src='./img/map.png' alt='img map' />
         )
     }
 }

@@ -9,6 +9,7 @@ const InputCheckbox = (props) => {
             name={props.name}
             value={props.value}
             onClick={props.onClick}
+            data-testid={props.testid}
         />
     );
 }
