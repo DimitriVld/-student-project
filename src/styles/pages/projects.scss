@@ -1,0 +1,12 @@
+.projects-page{
+
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+
+        .project-item-atom{
+            flex: 50%;
+        } 
+    }
+}

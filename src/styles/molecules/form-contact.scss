@@ -1,0 +1,26 @@
+.form-contact-molecule{
+    margin-top: 45px;
+
+    .for{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $white-primary;
+        opacity: 0.5;
+    }
+
+    .choice-select{
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        font-size: 24px;
+        cursor: pointer;
+
+        .cta-back{
+            display: inline;
+            width: 28px;
+            margin-right: 5px;
+        }
+    }
+}

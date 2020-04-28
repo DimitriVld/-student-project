@@ -1,0 +1,12 @@
+.input-checkbox-group-molecule{
+    @extend %fieldset;
+    margin-top: 30px;
+
+    .label-atom{
+        margin-left: 16px;
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: initial;
+        cursor: pointer;
+    }
+}

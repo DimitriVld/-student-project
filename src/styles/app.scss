@@ -30,9 +30,25 @@
  /_/    \_\__\___/|_| |_| |_|___/
 
 */
-@import "./atoms/ui/button.scss";
-@import "./atoms/ui/intro.scss";
+@import "./atoms/button.scss";
+@import "./atoms/title-page.scss";
+@import "./atoms/title-section.scss";
+@import "./atoms/list-item.scss";
+@import "./atoms/expert-item.scss";
+@import "./atoms/project-item.scss";
+@import "./atoms/navigation.scss";
+@import "./atoms/label.scss";
+@import "./atoms/input-text.scss";
+@import "./atoms/input-checkbox.scss";
+@import "./atoms/map.scss";
+
+// ICONS
 @import "./atoms/icons/burgerIcon.scss";
+
+// Molecules
+@import "./molecules/input-text-group.scss";
+@import "./molecules/input-checkbox-group.scss";
+@import "./molecules/form-contact.scss";
 
 
 /*
@@ -70,3 +86,9 @@
               __/ |
              |___/
 */
+@import "./pages/home.scss";
+@import "./pages/projects.scss";
+@import "./pages/single-project.scss";
+@import "./pages/contact.scss";
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";

@@ -1,0 +1,32 @@
+.title-page-atom{
+
+    width: 60%;
+
+    @include tabletPortrait{
+        width: 100%;
+    }
+
+    .title{
+        @extend %title-1; 
+    
+        color: $white-primary;
+    
+        .title-outline{
+            @extend .title;
+    
+            color: transparent;
+            -webkit-text-stroke: 1px $white-primary;
+        }
+    }
+
+    .text{
+        margin-top: 16px;
+
+        font-size: 24px;
+        line-height: 150%;
+
+        @include tabletLandscape{
+            font-size: 16px;
+        }
+    }
+}

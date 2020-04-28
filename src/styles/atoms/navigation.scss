@@ -1,0 +1,56 @@
+.navigation-atom{
+    display: flex;
+    align-content: center;
+    padding: 30px 0;
+
+    .logo{
+        margin: 0 35px;
+        font-weight: bold;
+        font-size: 19px;
+        text-transform: uppercase;
+    }
+
+    .nav{
+
+        a{
+            margin: 0 35px;
+            font-weight: bold;
+            font-size: 19px;
+            text-transform: uppercase;
+        }
+    }
+
+    .burger-icon{
+        display: none;
+    }
+
+    @include tabletLandscape{
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+
+        .nav{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 55px;
+            width: 100%;
+            text-align: center;
+            background-image: url('/img/noise.png');
+            animation: .3s infinite noise;
+            z-index: 2;
+
+            &.active{
+                display: flex;
+            }
+
+            a{
+                margin: 20px 0;
+            }
+        }
+        
+        .burger-icon{
+            display: block;
+        }
+    }
+}

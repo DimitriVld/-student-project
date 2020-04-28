@@ -1,0 +1,14 @@
+.title-section-atom{
+
+    .content{
+        @extend %title-2;
+    }
+
+    .sub{
+        font-family: 'DM';
+        font-style: italic;
+        color: rgba($white-primary, .5);
+
+        font-size: 24px;
+    }
+}

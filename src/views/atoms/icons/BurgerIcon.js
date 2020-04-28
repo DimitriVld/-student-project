@@ -6,9 +6,11 @@ const BurgerIcon = ({
     stroke = "#000",
     width = "100",
     className = "",
+    testid = "",
     viewBox = "0 0 100 100"
 }) => (
         <svg
+            data-testid={testid}
             width={width}
             style={style}
             height={width}
