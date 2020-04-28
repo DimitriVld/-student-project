@@ -6,9 +6,11 @@ const AddIcon = ({
     stroke = "#000",
     width = "150",
     className = "",
+    testid = "",
     viewBox = "0 0 150 150"
 }) => (
         <svg
+            data-testid={testid}
             width={width}
             style={style}
             height={width}

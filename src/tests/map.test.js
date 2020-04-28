@@ -1,18 +1,15 @@
 import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-class ContactPage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            
-        };
-    }
+import { Default } from '../stories/map.stories';
 
-    render(){
-        return (
-            <img className='map-atom' src='./img/map.png' alt='img map' />
-        )
-    }
-}
+describe('Renders map component', () => {
 
-export default ContactPage;
+    test('with default', () => {
+      const { container, getByTestId } = render(<Default />);
+      expect(container).toBeTruthy();
+      const map = getByTestId('default-map')
+      expect(map.classList.contains('map-atom')).toBe(true)
+    });
+  });

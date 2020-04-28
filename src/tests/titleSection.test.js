@@ -1,13 +1,15 @@
 import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-const TitleSection = (props) => {
-    return (
-        <div className="title-section-atom">
-            <h2 className="content" dangerouslySetInnerHTML={{__html: props.title}}></h2>
-            <div className="sub">{props.subtitle}</div>
-        </div>
-    )
+import { Default } from '../stories/titleSection.stories';
 
-}
+describe('Renders title section component', () => {
 
-export default TitleSection;
+    test('with default', () => {
+      const { container, getByTestId } = render(<Default />);
+      expect(container).toBeTruthy();
+      const title = getByTestId('default-title')
+      expect(title.classList.contains('title-section-atom')).toBe(true)
+    });
+  });

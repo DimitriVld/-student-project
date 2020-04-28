@@ -1,19 +1,15 @@
 import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-const TitlePage = (props) => {
-    return (
-        <div className="title-page-atom">
-            <h1 className="title">
-                <span dangerouslySetInnerHTML={{__html: props.titleFirst}}></span>
-                <span className="title-outline">{props.titleSecond}</span>
-            </h1>
-            { props.contentText ? 
-                <div className="text">{props.contentText}</div>
-                : ""
-            }
-        </div>
-    )
+import { Default } from '../stories/titlePage.stories';
 
-}
+describe('Renders title page component', () => {
 
-export default TitlePage;
+    test('with default', () => {
+      const { container, getByTestId } = render(<Default />);
+      expect(container).toBeTruthy();
+      const title = getByTestId('default-title')
+      expect(title.classList.contains('title-page-atom')).toBe(true)
+    });
+  });

@@ -1,41 +1,15 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import Icon from './icons/Index';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-class Navigation extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            
-        }
-    }
+import { Default } from '../stories/navigation.stories';
 
-    toggleMenu = () => {
-        document.querySelector('.nav').classList.toggle('active');
-        document.querySelector('.burger-icon').classList.toggle('active');
-    }
+describe('Renders navigation component', () => {
 
-    render(){
-        return (
-            <div className={'navigation-atom'}>
-    
-                {/* Menu */}
-                <Link className='logo' to='/'>Logo</Link>
-                <nav className='nav'>
-                    <Link to='/about-us'>À propos</Link>
-                    <Link to='/expertises'>Expertises</Link>
-                    <Link to='/services'>Services</Link>
-                    <Link to='/projects'>Projets</Link>
-                    <Link to='/contact'>Contact</Link>
-                </nav>
-    
-                {/* Burger menu */}
-                <div className="burger-menu" onClick={() => this.toggleMenu()}>
-                    <Icon name="Burger" width={50} stroke={"#fff"} />
-                </div>
-            </div>
-        )
-    }
-}
-
-export default Navigation;
+    test('with default', () => {
+      const { container, getByTestId } = render(<Default />);
+      expect(container).toBeTruthy();
+      const navigation = getByTestId('default-navigation')
+      expect(navigation.classList.contains('navigation-atom')).toBe(true)
+    });
+  });

@@ -1,16 +1,22 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-const ProjectItem = (props) => {
+import { Default, WithoutClass } from '../stories/projectItem.stories';
 
-    return(
-        <Link to={`/project-${props.id}`} className={`project-item-atom ${props.class ? props.class : ''}`}>
-            <div className="item-img" styles={{ backgroundImage:`url(${props.img ? props.img : ''})` }}></div>
-            <div className="item-name">{props.title}</div>
-            <div className="item-type">{props.type}</div>
-        </Link>
-    );
+describe('Renders project items component', () => {
 
-}
+    test('with default', () => {
+      const { container, getByTestId } = render(<Default />);
+      expect(container).toBeTruthy();
+      const item = getByTestId('default-item')
+      expect(item.classList.contains('with-class')).toBe(true)
+    });
 
-export default ProjectItem;
+    test('with a disabled', () => {
+      const { container, getByTestId } = render(<WithoutClass />);
+      expect(container).toBeTruthy();
+      const item = getByTestId('without-class-item')
+      expect(item.classList.contains('without-class')).toBe(true)
+    });
+  });

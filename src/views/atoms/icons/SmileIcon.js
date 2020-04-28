@@ -7,9 +7,11 @@ const SmileIcon = ({
     width = "100",
     height= "100",
     className = "",
+    testid = "",
     viewBox = "0 0 281 281"
 }) => (
         <svg
+            data-testid={testid}
             width={width}
             style={style}
             height={width}
