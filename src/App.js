@@ -9,6 +9,7 @@ import Expertises from "./views/pages/Expertises";
 import Projects from "./views/pages/Projects";
 import Services from "./views/pages/Services";
 import SingleProject from "./views/pages/SingleProject";
+import Konami from "./views/pages/Konami";
 
 class App extends React.Component {
 
@@ -33,6 +34,7 @@ class App extends React.Component {
           <Route exact path="/expertises" component={() => <Default page={<Expertises />} />} />
           <Route exact path="/projects" component={() => <Default page={<Projects />} />} />
           <Route exact path="/services" component={() => <Default page={<Services />} />} />
+          <Route exact path="/konami" component={() => <Default page={<Konami />} />} />
           <Route exact path="/project-:id" component={(props) => <Default page={<SingleProject {...props}/>} />} />
         </Router>
       </AppContext.Provider>
