@@ -28,13 +28,13 @@ const TeamSection = (props) => {
                 <div className="teammate-expertises">
                     <div className="expertises-content">
                         <div className="expertises-title">Ses expertises</div>
-                        <div className="expertises-all">
+                        <ul className="expertises-all">
                         {props.expertises.map( (item, i) => {
                             return(
-                                <div key={i} className="expertise-item">{item}</div>
-                            )                                    
+                                <li key={i} className="expertise-item">{item}</li>
+                            )              
                         })}
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>
