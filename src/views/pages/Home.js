@@ -6,7 +6,7 @@ import TitlePage from '../atoms/TitlePage';
 import Icon from '../atoms/icons/Index';
 import TitleSection from '../atoms/TitleSection';
 import ListItem from '../atoms/ListItem';
-import ExpertItem from '../atoms/ExpertItem';
+import ExpertItem from '../atoms/ExpertItem'; 
 import ProjectItem from '../atoms/ProjectItem';
 
 //Datas
