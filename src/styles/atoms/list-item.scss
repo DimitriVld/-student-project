@@ -41,4 +41,12 @@
         width: 27%;
     }
 
+    &.large-item{
+        width: 45%;
+
+        @include mobileLandscape{
+            width: 100%;
+        }
+    }
+
 }

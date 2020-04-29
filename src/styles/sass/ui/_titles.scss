@@ -6,6 +6,7 @@
     text-transform: uppercase;
     font-family: 'Khula';
     font-weight: 700;
+    line-height: 1;
 
     @include tabletLandscape{
         font-size: 40px;
