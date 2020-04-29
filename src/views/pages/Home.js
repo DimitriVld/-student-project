@@ -39,7 +39,7 @@ const Home = () => {
                 <TitlePage 
                     titleFirst={'We create <br/> & build'} 
                     titleSecond={'Digital solution'} 
-                    contentText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+                    contentText={'AD Agency est une agence digitale full services : qui intervient sur l’ensemble des expertises necessaire au bon déroulement de vos projets : conseils, UX design, UI design, developpement, maintenance...'}
                 />
 
                 <Icon name="Smile" width={300}/>

@@ -7,7 +7,7 @@ module.exports = {
             title: 'Nike',
             type: 'Site e commerce',
             content: '',
-            img: ''
+            img: './img/Nike.png'
         },
 
         {
@@ -15,7 +15,7 @@ module.exports = {
             title: 'Ikea',
             type: 'Site Vitrine',
             content: '',
-            img: ''
+            img: './img/Ikea.png'
         },
 
         {
@@ -23,7 +23,7 @@ module.exports = {
             title: 'Amazon',
             type: 'Machine learning',
             content: '',
-            img: ''
+            img: './img/Amazon.png'
         },
 
         {
@@ -31,7 +31,7 @@ module.exports = {
             title: 'Nickelodeon',
             type: 'Site vitrine',
             content: '',
-            img: ''
+            img: './img/Nick.png'
         },
 
         {
@@ -39,7 +39,7 @@ module.exports = {
             title: 'Nike',
             type: 'Site e commerce',
             content: '',
-            img: ''
+            img: './img/Nike.png'
         },
 
         {
@@ -47,7 +47,7 @@ module.exports = {
             title: 'Amazon',
             type: 'Machine learning',
             content: '',
-            img: ''
+            img: './img/Amazon.png'
         },
 
         {
@@ -55,7 +55,7 @@ module.exports = {
             title: 'Ikea',
             type: 'Site Vitrine',
             content: '',
-            img: ''
+            img: './img/Ikea.png'
         },
 
         {
@@ -63,7 +63,7 @@ module.exports = {
             title: 'Nike',
             type: 'Site e commerce',
             content: '',
-            img: ''
+            img: './img/Nike.png'
         },
 
 

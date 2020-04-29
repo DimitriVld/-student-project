@@ -27,6 +27,7 @@ class Navigation extends React.Component{
                     <Link to='/services'>Services</Link>
                     <Link to='/projects'>Projets</Link>
                     <Link to='/contact'>Contact</Link>
+                    <Link to='/konami'>Konami</Link>
                 </nav>
     
                 {/* Burger menu */}
