@@ -3,6 +3,7 @@
     color: $white-primary;
     position: relative;
     overflow: hidden;
+    line-height: initial;
 
     &:before {
         content: "";

@@ -1,0 +1,223 @@
+/*
+| ----------------
+|   Even teammate
+|   * 
+| ----------------
+*/
+.teammate{
+    &:nth-child(even){
+
+        .teammate-image{
+            justify-self: end;
+        }
+
+        .teammate-description{
+            grid-column-start: 1;
+            grid-row-start: 1;
+            padding-left: calc((100vw - 1440px) / 2); 
+
+            @include mobilePortrait{
+                grid-column-start: initial;
+                grid-row-start: initial; 
+                padding-left: 50px 30px;
+            }
+        }
+        .container-team-expertise{
+
+            padding-left: calc((100vw - 1440px) / 2);
+            padding-right: 0;
+
+            .teammate-expertises{
+                @include tabletLandscape{
+                    padding-left: 15px;
+                }
+            }
+            
+            .expertises-content{
+                grid-column-start: 1;
+                grid-row-start: 1;
+            }
+        }
+        
+    }
+}
+
+
+/*
+| --------------------
+| |  Each teammate |
+| --------------------
+|   * Presentation *
+|   * Expertises *
+| --------------------
+|   * Media Queries *
+| --------------------
+*/
+
+    /*
+    | ----------------
+    |   Presentation
+    | ----------------
+    */
+
+    .teammate-inner{
+
+        position: relative;
+        z-index: 2;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include mobileLandscape{
+            grid-template-columns: 1fr;
+        }
+
+        /*
+        |
+        | Image
+        | --------
+        */
+        .teammate-image{
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            width: 80%;
+
+            @include mobileLandscape{
+                height: 500px;
+                width: 100%;
+            }
+
+        }
+
+        .teammate-description{
+
+            padding: 100px 150px 250px 0;
+
+            @include media(1200px){
+                padding: 50px 0;
+            }
+
+            @include mobileLandscape{
+                padding: 50px 30px;
+                width: calc(100% - 30px);
+                margin: -50px auto;
+                background: $black-primary;
+            }
+
+            /*
+            |
+            | Nom
+            | ------
+            */
+            .teammate-name{
+                @extend %title-2;
+
+                &:after{
+                    content: "";
+                    
+                    position: relative;
+                    
+                    display: block;
+                    margin: 12px 0 18px 0;
+
+                    background: $white-primary;
+                    width: 32px; 
+                    height: 4px;
+                }
+            }
+
+            .teammate-content{
+                font-size: 20px;
+                color: rgba($white-primary, .5);
+            }
+        }
+
+    }
+
+    /*
+    | -------------
+    |   Expertise
+    | -------------
+    */
+
+    /*
+    |
+    | Container pour créer l'espace à droite
+    | ---------------------------------------
+    */
+    .container-team-expertise{
+        padding-right: calc((100vw - 1440px) / 2);
+    }
+
+
+    .teammate-expertises{
+        position: relative;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        padding-top: 56px;
+        padding-bottom: 56px;
+        padding-left: calc((100vw - 1440px) / 2);
+
+        margin-top: -150px;
+
+        background: $black-darkeness-primary;
+
+        @include media(1200px){
+            margin-top: 0;
+        }
+
+        @include mobileLandscape{
+            grid-template-columns : 1fr;
+            padding: 100px 15px;
+        }
+
+        .expertises-content{
+
+            grid-column: 2;
+            grid-row: 3;
+
+            @include mobileLandscape{
+                grid-column: initial;
+                grid-row: initial;
+            }
+
+            .expertises-title{
+                @extend %title-2;
+
+                margin-bottom: 32px;
+            }
+
+            /*
+            |
+            | Toutes les expertises
+            | -----------------------
+            */
+            .expertises-all{
+                display: flex;
+                flex-wrap: wrap;
+
+                @include mobileLandscape{
+                    flex-direction: column;
+                }
+                
+                .expertise-item{
+                    width: 35%;
+
+                    margin-right: 30px;
+                    margin-bottom: 15px;
+
+                    @include mobileLandscape{
+                        width: 100%;
+
+                        margin-right: 0;
+                    }
+                }
+            }
+
+        }
+    }

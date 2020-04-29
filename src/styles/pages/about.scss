@@ -1,0 +1,26 @@
+.about-us-page{
+
+    /*
+    |
+    | Team
+    | ---------
+    */
+    .team{
+        padding: 150px 0;
+
+        @include mobileLandscape{
+            padding: 0;
+        }
+
+        .container-dft{
+            @include mobileLandscape{
+                width: 100%;
+            }
+        }
+
+        .teammate:not(:last-child){
+            margin-bottom: 100px;
+        }
+        
+    }
+}
